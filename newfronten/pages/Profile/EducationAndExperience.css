@@ -1,0 +1,36 @@
+.EducationAndExperience {
+  background-color: var(--sec);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 50vw;
+}
+.EducationAndExperience .experience .card {
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.EducationAndExperience .experience .popUpCard {
+  position: absolute;
+  border: 0.7px solid var(--text);
+}
+.EducationAndExperience .hidden {
+  display: none;
+}
+.EducationAndExperience .popUpExperience {
+  border: 0.8px solid var(--text);
+  border-radius: 1rem;
+  padding: 1rem;
+  position: absolute;
+  z-index: 10;
+  background-color: var(--sec);
+}
+.EducationAndExperience .education .card {
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}/*# sourceMappingURL=EducationAndExperience.css.map */

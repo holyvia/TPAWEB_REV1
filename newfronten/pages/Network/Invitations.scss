@@ -1,0 +1,51 @@
+.container__invitations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px   solid var(--gray);
+    background-color: var(--sec);
+    border-radius: 20px;
+    width: 400px;
+    height: fit-content;
+    padding-bottom: 30px;
+}
+
+.container__header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    p{
+        font-size: medium;
+    }
+    button {
+        border: 0;
+        border-radius: 6px;
+        font-size: medium;
+        background-color: var(--prim);
+        color: var(--text);
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--fade-text)
+    }
+}
+
+.container__cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    hr {
+        width: 100%;
+        margin-bottom: 8px;
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.195);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}

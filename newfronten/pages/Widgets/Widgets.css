@@ -1,0 +1,76 @@
+.widgets {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  flex: 0.2;
+  border: 1px solid var(--border);
+  background-color: var(--sec);
+  border-radius: 10px;
+  border: 1px solid --prim;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 10px;
+  width: 15vw;
+}
+.widgets h2 {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.widgets__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.infoIcon {
+  color: var(--text);
+}
+
+.widgets__article {
+  display: flex;
+  background-color: var(--sec);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.widgets__article:hover {
+  background-color: var(--prim);
+}
+
+.widgets__articleLeft {
+  color: var(--acc);
+  margin-right: 50px;
+}
+.widgets__articleLeft MuiSvgIcon--root {
+  font-size: 15px;
+}
+
+.widgets__articleRight {
+  flex: 1;
+}
+.widgets__articleRight h4 {
+  color: var(--text);
+  font-size: 14px;
+}
+.widgets__articleRight p {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+p {
+  font-size: 11px;
+  color: var(--gray);
+  padding-right: 4px;
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  width: 15vw;
+  justify-content: center;
+}/*# sourceMappingURL=Widgets.css.map */

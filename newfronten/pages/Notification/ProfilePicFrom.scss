@@ -1,0 +1,15 @@
+.perNotif{
+    display: flex;
+    p{
+        font-size: 1rem;
+        left: 0;
+    }
+    .name{
+        font-weight: medium;
+        color: var(--acc);
+    }
+    .text{
+        display: flex;
+        gap: 0;
+    }
+}

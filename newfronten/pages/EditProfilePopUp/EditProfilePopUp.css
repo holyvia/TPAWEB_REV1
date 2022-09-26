@@ -1,0 +1,22 @@
+.editProfilePopUp {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 0;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  overflow: auto;
+  background-color: var(--sec);
+  height: 20rem;
+  width: 20rem;
+  margin-top: -10rem;
+  margin-left: -10rem;
+  border-radius: 20px;
+}
+.editProfilePopUp .close__btn {
+  color: var(--text);
+  padding-top: 5px;
+  padding-left: 98%;
+}/*# sourceMappingURL=EditProfilePopUp.css.map */

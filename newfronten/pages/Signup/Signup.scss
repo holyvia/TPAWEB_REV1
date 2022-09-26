@@ -1,0 +1,80 @@
+.login {
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    img {
+        object-fit: contain;
+        height: 70px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    .title{
+        display: flex;    
+        justify-content: flex-start;
+        padding-bottom: 20px;
+        // background-color: aqua;
+        width: 350px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        input {
+            width: 350px;
+            height: 40px;
+            font-size: 15px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+          }
+    }
+    .errorDisplay{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+        color: rgb(255, 98, 98);
+    }
+    p {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+    button{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 20px;
+        border: solid gray 1px;
+        background-color: #0177b7;
+        color: white;
+    }
+    button:hover{
+        background-color: #004a71;
+    }
+    .or{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .signup-google{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        height: 2rem ;
+        width: 360px;
+        img{
+            position:relative;
+            margin-top: -1.7rem;
+            width: 30px;
+
+        }
+    }
+    .signup-google:hover{
+        background-color: rgb(227, 222, 222);
+    }
+  }
+  
+  .login__register {
+    color: #0177b7;
+    cursor: pointer;
+  }

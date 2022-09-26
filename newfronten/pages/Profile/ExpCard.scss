@@ -1,0 +1,15 @@
+.card{
+    border:1px solid var(--border);
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom : 0.5rem;
+    .popUpCard{
+        border: 0.8px solid var(--text);
+        border-radius: 1rem;
+        padding: 1rem;
+        position: absolute;
+        z-index: 10;
+        background-color: var(--sec);
+    }
+}

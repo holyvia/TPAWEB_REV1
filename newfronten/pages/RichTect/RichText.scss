@@ -1,0 +1,31 @@
+.richText-a {
+    text-decoration: none;
+    color: #0084ff;
+
+    &:hover {
+        font-weight: 500;
+    }
+
+    &:visited {
+        color: #0084ff;
+    }
+}
+
+.show_hover {
+    position: absolute;
+    transition: transform 0.23s;
+    z-index: 20;
+    background-color: var(--primary);
+    border: solid 0.8px var(--border_accent);
+    box-shadow: 0.5px 0.5px 0.5px 0.5px var(--border_accent);
+    border-radius: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text_accent);
+}
+
+.hide_hover {
+    display: none;
+}

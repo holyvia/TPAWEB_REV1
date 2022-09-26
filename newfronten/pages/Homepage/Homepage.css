@@ -1,0 +1,72 @@
+.app {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--prim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  position: fixed;
+}
+
+.app__body {
+  position: absolute;
+  background-color: var(--prim);
+  display: flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 80px;
+  padding-left: 15vw;
+}
+.app__body .inputNewPassword {
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+.app__body .inputNewPassword .innerInput {
+  display: flex;
+}
+.app__body .inputNewPassword .innerInput label {
+  color: var(--text);
+}
+
+button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+}
+
+.network__content {
+  margin-top: 5rem;
+  position: fixed;
+}
+.network__content .app__body1 {
+  display: flex;
+  margin-top: 10px;
+  max-width: 1200px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.network__content .app__body1 .inputNewPassword {
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+.network__content .app__body1 .inputNewPassword .innerInput {
+  display: flex;
+}
+.network__content .app__body1 .inputNewPassword .innerInput label {
+  color: var(--text);
+}
+
+.footer1 {
+  padding-top: 7rem;
+  margin-left: 40rem;
+}/*# sourceMappingURL=Homepage.css.map */

@@ -1,0 +1,17 @@
+.analytics {
+  background-color: var(--sec);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 50vw;
+}
+.analytics .private__line {
+  display: flex;
+}
+.analytics .analytics__contents {
+  display: flex;
+}
+.analytics .analytics__contents .analytics__content {
+  display: flex;
+  padding-right: 1.5rem;
+}/*# sourceMappingURL=Analytics.css.map */

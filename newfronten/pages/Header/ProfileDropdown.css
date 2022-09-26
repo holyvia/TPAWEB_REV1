@@ -1,0 +1,28 @@
+.profile__dropdown {
+  background-color: var(--sec);
+  color: var(--text);
+  border: solid var(--border) 0.8px;
+  box-shadow: 0.5px 0.5px 2px 2px var(--border);
+  border-radius: 10px;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__dropdown .profile__content {
+  display: flex;
+}
+.profile__dropdown button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+  width: 80%;
+}
+.profile__dropdown .signout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__dropdown .signout p {
+  font-size: 13px;
+}/*# sourceMappingURL=ProfileDropdown.css.map */

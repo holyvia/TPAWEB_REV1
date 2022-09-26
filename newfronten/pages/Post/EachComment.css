@@ -1,0 +1,14 @@
+.comment__container {
+  display: flex;
+}
+.comment__container .comment__detail {
+  padding-left: 1rem;
+}
+.comment__container .comment__detail .likeComment {
+  display: flex;
+  align-items: center;
+}
+.comment__container .comment__detail .likeComment .likes_number {
+  padding-top: 0.9rem;
+  padding-right: 0.45rem;
+}/*# sourceMappingURL=EachComment.css.map */

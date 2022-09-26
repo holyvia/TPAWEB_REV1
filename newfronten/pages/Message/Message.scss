@@ -1,0 +1,165 @@
+.message_outer {
+    display: flex;
+    background-color: var(--sec);
+    width: 100;
+
+    p {
+        color: var(--text);
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        color: var(--text);
+        padding-bottom: 2rem;
+    }
+
+    .listOfMessage {
+        min-width: 40vw;
+        border: solid var(--border) 2px;
+        height: 70vh;
+
+        .searchdiv {
+            input {
+                width: 90%;
+            }
+
+            display: flex;
+        }
+    }
+
+    .message {
+        height: 70vh;
+        min-width: 40vw;
+        border: solid var(--border) 1px;
+        display: flex;
+        flex-direction: column;
+
+        .chatHistory {
+            display: flex;
+            flex-direction: column;
+            min-height: 57vh;
+            max-height: 57vh;
+            width: 100%;
+            border: solid var(--border) 1px;
+            padding-top: 2rem;
+            overflow: auto;
+
+
+            .outer__right {
+
+                .right__bubble_chat {
+                    padding-right: 1rem;
+                    margin-top: 0.5rem;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 1rem;
+
+                    .chat-text {
+                        background-color: var(--prim);
+                        padding: 0.2rem;
+                        padding-left: 0.9rem;
+                        padding-right: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        border-radius: 1rem;
+                    }
+
+                }
+
+                .imageInChat {
+                    float: right;
+                    padding-right: 1rem;
+                    height: 5rem;
+                }
+                .postPart{
+                    margin-right: 1rem;
+                    float: right;   
+                    border: 1px solid var(--border);
+                    border-radius: 5px;
+                    width: 25rem;
+                }
+                .profilePart{
+                    margin-right: 1rem;
+                    float: right;   
+                    border: 1px solid var(--border);
+                    border-radius: 5px;
+                    width: 25rem;
+                }
+            }
+
+            .outer__left {
+                display: flex;
+                flex-direction: column;
+                .left__bubble_chat {
+                    padding-left: 1rem;
+                    margin-top: 0.5rem;
+                    display: flex;
+                    float: left;
+                    gap: 1rem;
+
+                    .chat-text {
+                        background-color: var(--prim);
+                        padding: 0.2rem;
+                        padding-left: 0.9rem;
+                        padding-right: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        border-radius: 1rem;
+                    }
+                }
+                .outerimage{
+                    width: auto;
+                    .imageInChat {
+                        padding-left: 1rem;
+                        height: 5rem;
+                        
+                    }
+                }
+                    .postPart{
+                    margin-left: 1rem;
+                    border: 1px solid var(--border);
+                    border-radius: 5px;
+                    width: 25rem;
+                }
+                .profilePart{
+                    margin-left: 1rem;
+                    border: 1px solid var(--border);
+                    border-radius: 5px;
+                    width: 25rem;
+                }
+            }
+        }
+
+        .addMessage {
+            display: flex;
+
+            input {
+                width: 58%;
+                margin-left: 1rem;
+                height: 1.5rem;
+                border-radius: 1rem;
+            }
+
+            .file{
+                width: 8rem;
+                // background-color: red;
+                height: 2rem;
+            }
+
+            button {
+                height: 2.3rem;
+            }
+
+            #inputTag {
+                visibility: hidden;
+            }
+            .uploadedImage {
+                display: flex;
+                img {
+                    padding-left: 3rem;
+                    height: 3rem;
+                }
+            }
+        }
+
+        
+    }
+}

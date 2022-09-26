@@ -1,0 +1,126 @@
+.post {
+    background-color: var(--sec);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .post__header {
+    display: flex;
+    margin-bottom: 10px;
+    h3{
+      font-size: 1rem;
+      color: var(--text);
+    }
+    .pop__up{
+      display: none;
+    }
+    &:hover {
+      .pop__up{
+        // .pop__up{
+          display: flex;
+          position: absolute;
+          background-color: var(--prim);
+          border-radius: 10px;
+          width: 12rem;
+          height: 4rem;
+          padding-left: 1rem;
+          margin-right: 5rem;
+          margin-top: 2.5rem;
+          z-index: 10;
+          .profile__photo{
+            margin-top: 0.5rem;
+          }
+        // }
+      }
+    }
+  }
+
+  
+
+  
+  
+  .post__info {
+    margin-left: 10px;
+    h2 {
+        font-size: 15px;
+        color: var(--text);
+    }
+    p {
+        font-size: 12px;
+        color: var(--text);
+    }
+  }
+  
+  
+  .post__body {
+    img{
+      width:100%;
+    }
+    video{
+      width: 100%;
+    }
+    overflow-wrap: anywhere;
+  }
+
+  .job__body{
+    h3{
+      color: var(--text);
+    }
+  }
+  
+  
+  
+  .post__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .likes_number{
+      padding-top: 10px;
+      color: gray;
+    }
+    
+    .addCommentVisible{
+      display: block;
+      position: absolute;
+      background-color: var(--prim);
+      color:var(--text);
+      padding: 1rem;
+    }
+    .addCommentInvisible{
+      display: none;
+    }
+  }
+
+  .sendComponent{
+    float: right;
+    color: var(--text);
+    background-color: var(--sec);
+    border: solid 1px var(--text);
+    width:  12rem;
+    height: fit-content;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+    .searchPart{
+      padding-left: 0.4rem;
+      padding-top: 0.4rem;
+      input{
+        width: 7rem;
+        border-radius: 1rem;
+      }
+      display: flex;
+    }
+    .searchResult{
+      .eachRes{
+        display: flex;
+        padding: 0.5rem;
+        h4{
+          padding-left: 0.5rem;
+        }
+      }
+    }
+  }
+  .hidden{
+    display: none;
+  }
+  

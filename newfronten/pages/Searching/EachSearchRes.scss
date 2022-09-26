@@ -1,0 +1,47 @@
+.container__card{
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: var(--sec);
+    border: 1px solid var(--sec);
+    border-radius: 10px;
+    h4{
+        color: var(--text);
+    }
+    .avatar{
+        width: 70px;
+        height: 70px;
+    }
+    .card__description{
+        font-size: medium;
+        margin-left: 10px;
+        width: 100%;
+        p{
+            margin-bottom: 2px;
+        }
+        .name{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .work{
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+        button{
+            float: right;
+        }
+    }
+    .popUpSendMessage{
+        width: 17rem;
+        height: 8rem;
+        background-color: var(--sec);
+        position: absolute;
+        padding-left: 1rem;
+        border-radius: 1rem;
+        border: 1px var(--text) solid;
+    }
+    .hidden{
+        display:none
+    }
+}

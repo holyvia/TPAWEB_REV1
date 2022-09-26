@@ -1,0 +1,25 @@
+.searching {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--prim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.searching__body {
+  position: absolute;
+  background-color: var(--prim);
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  max-width: 1200px;
+  padding-right: 40vw;
+  padding-left: 40vw;
+}
+.searching__body p {
+  align-self: center;
+}/*# sourceMappingURL=Searching.css.map */

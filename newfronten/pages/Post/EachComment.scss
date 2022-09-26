@@ -1,0 +1,14 @@
+.comment__container{
+    display: flex;
+    .comment__detail{
+        padding-left: 1rem;
+        .likeComment{
+            display: flex;
+            align-items: center;
+            .likes_number{
+                padding-top: 0.9rem;
+                padding-right: 0.45rem;
+            }
+        }
+    }
+}

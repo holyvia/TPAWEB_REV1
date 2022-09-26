@@ -1,0 +1,12 @@
+.hidden {
+  display: none;
+}
+
+.fileComponent {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+.addReplyVisible {
+  background-color: red;
+}/*# sourceMappingURL=NewPost.css.map */

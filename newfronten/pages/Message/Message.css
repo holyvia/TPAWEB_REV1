@@ -1,0 +1,139 @@
+.message_outer {
+  display: flex;
+  background-color: var(--sec);
+  width: 100;
+}
+.message_outer p {
+  color: var(--text);
+  font-size: 1.2rem;
+}
+.message_outer h3 {
+  color: var(--text);
+  padding-bottom: 2rem;
+}
+.message_outer .listOfMessage {
+  min-width: 40vw;
+  border: solid var(--border) 2px;
+  height: 70vh;
+}
+.message_outer .listOfMessage .searchdiv {
+  display: flex;
+}
+.message_outer .listOfMessage .searchdiv input {
+  width: 90%;
+}
+.message_outer .message {
+  height: 70vh;
+  min-width: 40vw;
+  border: solid var(--border) 1px;
+  display: flex;
+  flex-direction: column;
+}
+.message_outer .message .chatHistory {
+  display: flex;
+  flex-direction: column;
+  min-height: 57vh;
+  max-height: 57vh;
+  width: 100%;
+  border: solid var(--border) 1px;
+  padding-top: 2rem;
+  overflow: auto;
+}
+.message_outer .message .chatHistory .outer__right .right__bubble_chat {
+  padding-right: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.message_outer .message .chatHistory .outer__right .right__bubble_chat .chat-text {
+  background-color: var(--prim);
+  padding: 0.2rem;
+  padding-left: 0.9rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+.message_outer .message .chatHistory .outer__right .imageInChat {
+  float: right;
+  padding-right: 1rem;
+  height: 5rem;
+}
+.message_outer .message .chatHistory .outer__right .postPart {
+  margin-right: 1rem;
+  float: right;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  width: 25rem;
+}
+.message_outer .message .chatHistory .outer__right .profilePart {
+  margin-right: 1rem;
+  float: right;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  width: 25rem;
+}
+.message_outer .message .chatHistory .outer__left {
+  display: flex;
+  flex-direction: column;
+}
+.message_outer .message .chatHistory .outer__left .left__bubble_chat {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  float: left;
+  gap: 1rem;
+}
+.message_outer .message .chatHistory .outer__left .left__bubble_chat .chat-text {
+  background-color: var(--prim);
+  padding: 0.2rem;
+  padding-left: 0.9rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+.message_outer .message .chatHistory .outer__left .outerimage {
+  width: auto;
+}
+.message_outer .message .chatHistory .outer__left .outerimage .imageInChat {
+  padding-left: 1rem;
+  height: 5rem;
+}
+.message_outer .message .chatHistory .outer__left .postPart {
+  margin-left: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  width: 25rem;
+}
+.message_outer .message .chatHistory .outer__left .profilePart {
+  margin-left: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  width: 25rem;
+}
+.message_outer .message .addMessage {
+  display: flex;
+}
+.message_outer .message .addMessage input {
+  width: 58%;
+  margin-left: 1rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+}
+.message_outer .message .addMessage .file {
+  width: 8rem;
+  height: 2rem;
+}
+.message_outer .message .addMessage button {
+  height: 2.3rem;
+}
+.message_outer .message .addMessage #inputTag {
+  visibility: hidden;
+}
+.message_outer .message .addMessage .uploadedImage {
+  display: flex;
+}
+.message_outer .message .addMessage .uploadedImage img {
+  padding-left: 3rem;
+  height: 3rem;
+}/*# sourceMappingURL=Message.css.map */

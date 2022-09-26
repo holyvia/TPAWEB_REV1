@@ -1,0 +1,15 @@
+.perNotif {
+  display: flex;
+}
+.perNotif p {
+  font-size: 1rem;
+  left: 0;
+}
+.perNotif .name {
+  font-weight: medium;
+  color: var(--acc);
+}
+.perNotif .text {
+  display: flex;
+  gap: 0;
+}/*# sourceMappingURL=ProfilePicFrom.css.map */

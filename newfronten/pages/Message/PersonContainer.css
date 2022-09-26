@@ -1,0 +1,9 @@
+.personContainer {
+  display: flex;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.personContainer p {
+  padding-left: 1rem;
+}/*# sourceMappingURL=PersonContainer.css.map */
