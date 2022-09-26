@@ -1,0 +1,22 @@
+type Education{
+    ID: ID!
+    UserID: ID!
+    Company:String!
+    Grade:String
+    Description:String!
+    Image:String!
+    MonthStart:Int!
+    YearStart:Int!
+    MonthEnd:Int!
+    YearEnd:Int!
+}
+
+extend type Query{
+    getEducation(userId:ID!): Any!
+}
+
+extend type Mutation{
+    addEducation(id: ID!, userId: ID!, company:String!, grade:String!, description:String!, image:String!, monthStart:Int!, yearStart:Int!, monthEnd:Int!, yearEnd:Int!): Any!
+    updateEducation(id: ID!, userId: ID!, company:String!, grade:String!, description:String!, image:String!, monthStart:Int!, yearStart:Int!, monthEnd:Int!, yearEnd:Int!):Any!
+    deleteEducation(id:ID!, userId:ID!):Any!
+} 

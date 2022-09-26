@@ -1,0 +1,16 @@
+type Job {
+    ID: ID!
+    UserID: ID!
+    Title:String!
+    Company:String!
+    Position:String!
+    Description:String!
+}
+
+extend type Query{
+    getJobs(limit: Int!, offset: Int!): Any!
+}
+
+extend type Mutation{
+    createJobs(id: ID!, userId: ID!, title:String!, company:String!, position:String!, description:String!): Any!
+} 

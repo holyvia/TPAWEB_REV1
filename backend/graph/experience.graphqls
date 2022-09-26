@@ -1,0 +1,22 @@
+type Experience {
+    ID: ID!
+    UserID: ID!
+    Company:String!
+    Position:String!
+    Description:String!
+    Image:String!
+    MonthStart:Int!
+    YearStart:Int!
+    MonthEnd:Int!
+    YearEnd:Int!
+}
+
+extend type Query{
+    getExperience(userId:ID!): Any!
+}
+
+extend type Mutation{
+    addExperience(id: ID!, userId: ID!, company:String!, position:String!, description:String!, image:String!, monthStart:Int!, yearStart:Int!, monthEnd:Int!, yearEnd:Int!): Any!
+    updateExperience(id: ID!, userId: ID!, company:String!, position:String!, description:String!, image:String!, monthStart:Int!, yearStart:Int!, monthEnd:Int!, yearEnd:Int!):Any!
+    deleteExperience(id:ID!, userId:ID!):Any!
+}

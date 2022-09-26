@@ -1,0 +1,59 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+directive @goField(forceResolver: Boolean, name: String) on FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+# new directive
+directive @auth on FIELD_DEFINITION
+
+scalar Any
+
+type User {
+  ID: String!
+  Name: String!
+  Email: String!
+  Password: String!
+  Work: String
+  Education: String
+  Region: String
+  PhotoProfile: String
+  BackgroundPhoto: String
+}
+
+input NewUser{
+  name: String!
+  email: String!
+  password: String!
+}
+
+type Query {
+  user(id: ID!): Any!
+  userByEmail(email:String!):Any
+  users: [User!]!
+  protected: String! @goField(forceResolver: true) @auth
+  userYouMightKnow(id: ID!): Any!
+  getConnectUser(id:ID!):Any!
+  getBlockedUser(id:ID!):Any!
+}
+
+
+
+type Mutation {
+  register(input: NewUser!): Any!
+  registerForGoogle(id:ID!,input:NewUser!):Any!
+  login(email: String!, password: String!): Any!
+  updateUser(id:String!, name:String!, work:String!, education:String!,region: String!, profileURL: String!, backgroundURL: String!): Any!
+  activateUser(id: ID!): Any!
+  updatePassword(id:String!, newPassword:String!):Any!
+  follow(id: ID!, followedId: ID!): Any!
+  unfollow(id: ID!, unfollowedId: ID!): Any!
+  sendConnect(id: ID!, requestedId: ID!): Any!
+  acceptConnect(id: ID!, acceptedId: ID!): Any!
+  ignoreConnect(id: ID!, ignoredId: ID!): Any!
+  unconnect(id: ID!, unconnectedId: ID!): Any!
+  removeRequest(id:ID!, removedRequestID:ID!):Any!
+  viewUser(id:ID!, viewedId:ID!):Any!
+  blockUser(id:ID!, blockedId:ID!):Any!
+  unblockUser(id:ID!, unblockedId:ID!):Any!
+}

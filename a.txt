@@ -1,0 +1,15 @@
+theme disimpan di local storage
+belom responsive
+error saat sign in
+error saat blm activate
+error create same email
+menu footer dibedakan dengan nav bar
+footer ada di semua halaman
+munculkan tampilan file upload
+blm bisa bikin post
+tidak bisa post kalau kosong
+hanya bisa salah 1
+tmah tombol buat hapus file
+search bisa post dan user, dan filter
+add suctom meessage connent
+tidak bisa update klo bblm ke upload

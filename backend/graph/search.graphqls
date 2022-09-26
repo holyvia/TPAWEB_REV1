@@ -1,0 +1,11 @@
+
+type Search {
+    users: [User!]! @goField(forceResolver: true)
+    posts: [Post!]! @goField(forceResolver: true)
+}
+
+extend type Query{
+    search(keyword: String!, limit: Int!, offset: Int!): Any!
+    searchpost(keyword: String!, limit: Int!, offset: Int!): [Post!]!
+    searchConnect(id: String!, keyword: String!, limit: Int!, offset: Int!): Any!
+} 

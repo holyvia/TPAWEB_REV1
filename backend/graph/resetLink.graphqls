@@ -1,0 +1,13 @@
+type ResetLink {
+  id: ID!
+  userId: String!
+  validationCode:String
+}
+
+extend type Query {
+  getResetLink(id: String!): ResetLink!
+}
+
+extend type Mutation {
+  createResetLink(userEmail: String!): String!
+}

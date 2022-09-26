@@ -1,0 +1,33 @@
+type Post {
+    ID: ID!
+    UserID: ID!
+    Caption: String!
+    PhotoURL: String
+    VideoURL: String
+}
+
+type Comment {
+	ID: ID!
+	UserID: ID!
+	Comment: String!
+}
+
+extend type Query{
+    generateID: Any!
+    getPosts(id: ID!, limit: Int!, offset: Int!): Any!
+    getComment(postId: ID!): Any!
+    getLimitComment(postId: ID!): Any!
+    getReply(commentId:ID!):Any!
+    getPost(id:ID!):Any!
+}
+
+extend type Mutation{
+    createPost(id: ID!, userId: ID!, caption: String!, photo_url: String, video_url: String): Any!
+    likePost(id: ID!, likerId: ID!): Any!
+    unlikePost(id: ID!, unlikerId: ID!): Any!
+    commentPost(postId: ID!, commenterId: ID!, comment: String!): Any!
+    likeComment(commentId: ID!, likerId: ID!): Any!
+    unlikeComment(commentId: ID!, unlikerId: ID!): Any!
+    replyComment(postId: ID!, commenterId: ID!, comment: String!, commentId:ID!): Any!
+    addSends(postId:ID!):Any!
+} 
